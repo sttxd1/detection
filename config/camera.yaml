@@ -1,0 +1,12 @@
+/oak:
+  ros__parameters:
+    camera:
+      i_enable_imu: false
+      i_enable_ir: false
+      i_align_depth: true
+      i_publish_synced_rect_pair: true
+      # i_nn_type: spatial
+      #i_nn_type: none
+      i_pipeline_type: RGBD
+    # nn:
+    #   i_nn_config_path: depthai_ros_driver/mobilenet

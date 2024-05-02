@@ -1,0 +1,12 @@
+<launch>
+
+  <arg name="background_r" default="0"/>
+  <arg name="background_g" default="255"/>
+  <arg name="background_b" default="0"/>
+  <arg name="chatter_ns" default="my/chatter/ns"/>
+
+  <!-- start a turtlesim_node in the turtlesim1 namespace -->
+  <node pkg="detection_pkg" exec="oakd_yolo.py" name="oakd_detection_node"/>
+
+
+</launch>

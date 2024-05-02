@@ -1,0 +1,2 @@
+source;share/detection_pkg/environment/ament_prefix_path.sh
+source;share/detection_pkg/environment/path.sh
