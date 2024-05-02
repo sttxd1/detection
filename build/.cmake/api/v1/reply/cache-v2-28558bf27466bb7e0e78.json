@@ -943,7 +943,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "detection_pkg"
+			"value" : "detection"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -2156,6 +2156,42 @@
 			],
 			"type" : "PATH",
 			"value" : "/opt/ros/humble/share/builtin_interfaces/cmake"
+		},
+		{
+			"name" : "detection_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build"
+		},
+		{
+			"name" : "detection_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "detection_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg"
 		},
 		{
 			"name" : "detection_pkg_BINARY_DIR",

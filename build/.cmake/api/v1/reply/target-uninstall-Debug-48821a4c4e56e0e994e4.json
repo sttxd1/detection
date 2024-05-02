@@ -80,7 +80,7 @@
 	[
 		{
 			"backtrace" : 10,
-			"id" : "detection_pkg_uninstall::@6890427a1f51a3e7e1df"
+			"id" : "detection_uninstall::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "uninstall::@6890427a1f51a3e7e1df",

@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-9522860c324c2e2e3f08.json",
+					"jsonFile" : "directory-.-Debug-5e12728116656e75d5eb.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -29,7 +29,7 @@
 					[
 						0
 					],
-					"name" : "detection_pkg",
+					"name" : "detection",
 					"targetIndexes" : 
 					[
 						0,
@@ -41,15 +41,15 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "detection_pkg_uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-detection_pkg_uninstall-Debug-09b77d4bc6bd93cad664.json",
-					"name" : "detection_pkg_uninstall",
+					"id" : "detection_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_uninstall-Debug-abfbe5ea263d8c794bc7.json",
+					"name" : "detection_uninstall",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "uninstall::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-uninstall-Debug-4d3712aa02e60b2d2c7c.json",
+					"jsonFile" : "target-uninstall-Debug-48821a4c4e56e0e994e4.json",
 					"name" : "uninstall",
 					"projectIndex" : 0
 				}

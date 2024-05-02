@@ -232,7 +232,7 @@
 		{
 			"backtrace" : 1,
 			"component" : "Unspecified",
-			"destination" : "lib/detection_pkg",
+			"destination" : "lib/detection",
 			"paths" : 
 			[
 				"src/oakd_yolo.py",
@@ -243,7 +243,7 @@
 		{
 			"backtrace" : 2,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"launch",
@@ -257,7 +257,7 @@
 			"destination" : "share/ament_index/resource_index/package_run_dependencies",
 			"paths" : 
 			[
-				"build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/detection_pkg"
+				"build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/detection"
 			],
 			"type" : "file"
 		},
@@ -267,14 +267,14 @@
 			"destination" : "share/ament_index/resource_index/parent_prefix_path",
 			"paths" : 
 			[
-				"build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/detection_pkg"
+				"build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/detection"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 16,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg/environment",
+			"destination" : "share/detection/environment",
 			"paths" : 
 			[
 				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh"
@@ -284,7 +284,7 @@
 		{
 			"backtrace" : 17,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg/environment",
+			"destination" : "share/detection/environment",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/ament_prefix_path.dsv"
@@ -294,7 +294,7 @@
 		{
 			"backtrace" : 18,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg/environment",
+			"destination" : "share/detection/environment",
 			"paths" : 
 			[
 				"/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh"
@@ -304,7 +304,7 @@
 		{
 			"backtrace" : 19,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg/environment",
+			"destination" : "share/detection/environment",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/path.dsv"
@@ -314,7 +314,7 @@
 		{
 			"backtrace" : 21,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/local_setup.bash"
@@ -324,7 +324,7 @@
 		{
 			"backtrace" : 22,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/local_setup.sh"
@@ -334,7 +334,7 @@
 		{
 			"backtrace" : 23,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/local_setup.zsh"
@@ -344,7 +344,7 @@
 		{
 			"backtrace" : 24,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/local_setup.dsv"
@@ -354,7 +354,7 @@
 		{
 			"backtrace" : 25,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"build/ament_cmake_environment_hooks/package.dsv"
@@ -367,25 +367,25 @@
 			"destination" : "share/ament_index/resource_index/packages",
 			"paths" : 
 			[
-				"build/ament_cmake_index/share/ament_index/resource_index/packages/detection_pkg"
+				"build/ament_cmake_index/share/ament_index/resource_index/packages/detection"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 32,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg/cmake",
+			"destination" : "share/detection/cmake",
 			"paths" : 
 			[
-				"build/ament_cmake_core/detection_pkgConfig.cmake",
-				"build/ament_cmake_core/detection_pkgConfig-version.cmake"
+				"build/ament_cmake_core/detectionConfig.cmake",
+				"build/ament_cmake_core/detectionConfig-version.cmake"
 			],
 			"type" : "file"
 		},
 		{
 			"backtrace" : 33,
 			"component" : "Unspecified",
-			"destination" : "share/detection_pkg",
+			"destination" : "share/detection",
 			"paths" : 
 			[
 				"package.xml"

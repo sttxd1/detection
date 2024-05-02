@@ -646,17 +646,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "ament_cmake_environment_hooks/local_setup.sh"
   "ament_cmake_environment_hooks/local_setup.zsh"
   "ament_cmake_core/stamps/nameConfig.cmake.in.stamp"
-  "ament_cmake_core/detection_pkgConfig.cmake"
+  "ament_cmake_core/detectionConfig.cmake"
   "ament_cmake_core/stamps/nameConfig-version.cmake.in.stamp"
-  "ament_cmake_core/detection_pkgConfig-version.cmake"
-  "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/detection_pkg"
-  "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/detection_pkg"
-  "ament_cmake_index/share/ament_index/resource_index/packages/detection_pkg"
+  "ament_cmake_core/detectionConfig-version.cmake"
+  "ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/detection"
+  "ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/detection"
+  "ament_cmake_index/share/ament_index/resource_index/packages/detection"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
-  "CMakeFiles/detection_pkg_uninstall.dir/DependInfo.cmake"
+  "CMakeFiles/detection_uninstall.dir/DependInfo.cmake"
   )

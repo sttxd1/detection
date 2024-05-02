@@ -69,8 +69,8 @@
 			}
 		]
 	},
-	"id" : "detection_pkg_uninstall::@6890427a1f51a3e7e1df",
-	"name" : "detection_pkg_uninstall",
+	"id" : "detection_uninstall::@6890427a1f51a3e7e1df",
+	"name" : "detection_uninstall",
 	"paths" : 
 	{
 		"build" : ".",
@@ -98,13 +98,13 @@
 		{
 			"backtrace" : 9,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/detection_pkg_uninstall",
+			"path" : "build/CMakeFiles/detection_uninstall",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/detection_pkg_uninstall.rule",
+			"path" : "build/CMakeFiles/detection_uninstall.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -185,17 +185,17 @@ uninstall/fast:
 .PHONY : uninstall/fast
 
 #=============================================================================
-# Target rules for targets named detection_pkg_uninstall
+# Target rules for targets named detection_uninstall
 
 # Build rule for target.
-detection_pkg_uninstall: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detection_pkg_uninstall
-.PHONY : detection_pkg_uninstall
+detection_uninstall: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 detection_uninstall
+.PHONY : detection_uninstall
 
 # fast build rule for target.
-detection_pkg_uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection_pkg_uninstall.dir/build.make CMakeFiles/detection_pkg_uninstall.dir/build
-.PHONY : detection_pkg_uninstall/fast
+detection_uninstall/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/detection_uninstall.dir/build.make CMakeFiles/detection_uninstall.dir/build
+.PHONY : detection_uninstall/fast
 
 # Help Target
 help:
@@ -210,7 +210,7 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... detection_pkg_uninstall"
+	@echo "... detection_uninstall"
 	@echo "... uninstall"
 .PHONY : help
 

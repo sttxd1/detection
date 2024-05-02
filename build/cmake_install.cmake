@@ -43,76 +43,76 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/detection_pkg" TYPE PROGRAM FILES
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/detection" TYPE PROGRAM FILES
     "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/src/oakd_yolo.py"
     "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/src/human_detection_pcd.py"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE DIRECTORY FILES
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE DIRECTORY FILES
     "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/launch"
     "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/config"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/detection_pkg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/detection")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/detection_pkg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/detection")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg/environment" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection/environment" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg/environment" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection/environment" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_index/share/ament_index/resource_index/packages/detection_pkg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_index/share/ament_index/resource_index/packages/detection")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg/cmake" TYPE FILE FILES
-    "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_core/detection_pkgConfig.cmake"
-    "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_core/detection_pkgConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection/cmake" TYPE FILE FILES
+    "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_core/detectionConfig.cmake"
+    "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/ament_cmake_core/detectionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection_pkg" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/detection" TYPE FILE FILES "/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)

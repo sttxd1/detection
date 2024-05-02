@@ -1,5 +1,5 @@
 /home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/CMakeFiles/uninstall.dir
-/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/CMakeFiles/detection_pkg_uninstall.dir
+/home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/CMakeFiles/detection_uninstall.dir
 /home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/CMakeFiles/test.dir
 /home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/CMakeFiles/edit_cache.dir
 /home/st/scooter_ws/detection_ws/src/ihi_detection/detection_pkg/build/CMakeFiles/rebuild_cache.dir
