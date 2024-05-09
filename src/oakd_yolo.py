@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import rclpy
+import torch
 from rclpy.node import Node
 from sensor_msgs.msg import Image
 # import cv2 
@@ -235,7 +236,9 @@ def main(args=None):
     print("Startinc yolo detector")
     rclpy.init(args=args)
     yolo_node = YoloObjectDetection()
+    device = torch.cuda.is_available()
     rclpy.spin(yolo_node)
+    yolo_node.get_logger().info(f'CUDA enbale: {device}', once=True)
     yolo_node.destroy_node()
     rclpy.shutdown()
 
