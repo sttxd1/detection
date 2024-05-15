@@ -151,12 +151,12 @@ class YoloObjectDetection(Node):
 
                 # cv2.imshow("frame", cv_image)
                 # cv2.waitKey(1)
-        yolo_img = np.array(pil_image)
+        yolo_img = np.array(pil_image)[..., ::-1]
         yolo_msg = Image()
         yolo_msg.header.stamp = self.get_clock().now().to_msg()
         yolo_msg.height = yolo_img.shape[0]
         yolo_msg.width = yolo_img.shape[1]
-        yolo_msg.encoding = 'rgb8'
+        yolo_msg.encoding = 'bgr8'
         yolo_msg.is_bigendian = False
         yolo_msg.step = yolo_img.shape[1] * 3
         yolo_msg.data = yolo_img.tobytes()
