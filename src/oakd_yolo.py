@@ -29,7 +29,7 @@ class YoloObjectDetection(Node):
         # self.stereo_sub = self.create_subscription(Image, '/oak/stereo/image_raw', self.stereo_callback, 10)
         #self.stereo_sub = self.create_subscription(Image, '/stereo/converted_depth', self.stereo_callback, 10)
         self.yolo_pub = self.create_publisher(Image, 'yolo_img', 10)
-        self.yolo_pub = self.create_publisher(String, 'objects_detect', 10)
+        # self.yolo_pub = self.create_publisher(String, 'objects_detect', 10)
         self.publisher_ = self.create_publisher(Marker, 'visualization_marker', 10)
         self.yolo = YOLO('yolov8n.pt').to('cuda')
         self.current_frame_yolo_results = None
