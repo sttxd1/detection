@@ -12,6 +12,8 @@ from PIL import Image as PilImage, ImageDraw
 from visualization_msgs.msg import Marker
 from geometry_msgs.msg import Point
 from std_msgs.msg import ColorRGBA
+from std_msgs.msg import String
+
 
 from tf2_ros import Buffer, TransformListener
 # from tf2_ros.transformations import quaternion_from_euler
@@ -27,6 +29,7 @@ class YoloObjectDetection(Node):
         # self.stereo_sub = self.create_subscription(Image, '/oak/stereo/image_raw', self.stereo_callback, 10)
         #self.stereo_sub = self.create_subscription(Image, '/stereo/converted_depth', self.stereo_callback, 10)
         self.yolo_pub = self.create_publisher(Image, 'yolo_img', 10)
+        self.yolo_pub = self.create_publisher(String, 'objects_detect', 10)
         self.publisher_ = self.create_publisher(Marker, 'visualization_marker', 10)
         self.yolo = YOLO('yolov8n.pt').to('cuda')
         self.current_frame_yolo_results = None
@@ -157,6 +160,42 @@ class YoloObjectDetection(Node):
 
         except Exception as e:
             self.get_logger().error(f"Error in YOLO callback: {str(e)}")
+    # def yolo_rgb_callback(self, msg):
+    #     self.get_logger().info("YOLO callback triggered")
+
+    #     # Convert ROS image message to numpy array
+    #     image_np = np.frombuffer(msg.data, dtype=np.uint8).reshape(msg.height, msg.width, -1)
+    #     pil_image = PilImage.fromarray(image_np[..., ::-1])  # Convert BGR to RGB for PIL
+
+    #     self.get_logger().info("Image converted to PIL format")
+
+    #     # Perform YOLO detection
+    #     results = self.yolo.predict(source=pil_image, show=False, device='cuda')[0]
+    #     self.current_frame_yolo_results = results
+        
+    #     # Initialize dictionary to store coordinates
+    #     coordinates_dict = {'people': [], 'car': []}
+
+    #     for box in results.boxes.cpu().numpy():
+    #         object_id = int(box.cls[0])
+    #         object_confidence = box.conf
+
+    #         if object_id in [0, 2] and object_confidence >= (0.60 if object_id == 0 else 0.50):
+    #             x1, y1, x2, y2 = box.xyxy[0].astype(int)
+    #             if object_id == 0:  # person
+    #                 coordinates_dict['people'].append([x1, y1, x2, y2])
+    #             elif object_id == 2:  # car
+    #                 coordinates_dict['car'].append([x1, y1, x2, y2])
+
+    #     self.get_logger().info("YOLO detection completed")
+    #     self.get_logger().info(f"Detected objects: {coordinates_dict}")
+
+    #     # Publish the coordinates dictionary
+    #     coordinates_msg = String()
+    #     coordinates_msg.data = str(coordinates_dict)
+    #     self.yolo_pub.publish(coordinates_msg)
+    #     self.get_logger().info("Coordinates dictionary published")
+
     # def yolo_rgb_callback(self, msg):
     #     # cv_image = self.cv_bridge.imgmsg_to_cv2(msg, 'bgr8')
     #     image_np = np.frombuffer(msg.data, dtype=np.uint8).reshape(msg.height, msg.width, -1)
