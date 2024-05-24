@@ -6,7 +6,7 @@
   <arg name="chatter_ns" default="my/chatter/ns"/>
 
   <!-- start a turtlesim_node in the turtlesim1 namespace -->
-  <node pkg="detection_pkg" exec="oakd_yolo.py" name="oakd_detection_node"/>
+  <node pkg="detection" exec="oakd_yolo.py" name="oakd_detection_node"/>
 
 
 </launch>
